@@ -1,3 +1,4 @@
+<<<<<<< ours
 /*
 PIE CHART
 ================================================ */
@@ -34,3 +35,15 @@ var barOptions = {
 };
 
 new Chartist.Bar('.bar-chart', barData, barOptions);
+=======
+const menuButton = document.querySelector('.nav-toggle');
+const navigation = document.querySelector('.main-nav');
+
+if (menuButton && navigation) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = navigation.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
+  });
+}
+>>>>>>> theirs
