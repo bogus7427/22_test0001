@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sample Web</title>
+    <meta
+      name="description"
+      content="Web 개발회사 Sample Web 리쿠르트 사이트"
+    />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/logo.svg"
+              alt="Web 개발회사 Sample Web"
+            />
+          </a>
+        </h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a class="current menu-home" href="index.html">홈</a></li>
+            <li><a class="menu-job" href="job.html">모집요강</a></li>
+            <li><a class="menu-form" href="form.html">지원</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="home-hero wrapper">
+      <h2>함께 도전해봅시다</h2>
+      <p>
+        저희와 함께 웹의 미래를 만들어보지 않으시겠습니까? 멋진 동료를 모집하고
+        있습니다. '되고 싶은 나'가 될 수 있는 곳, 분명 발견할 수 있을거예요.
+      </p>
+      <a href="job.html" class="btn btn-primary">모집요강 확인</a>
+    </section>
+
+    <section class="brown-bg">
+      <div class="wrapper content flex-reverse">
+        <div class="home-text">
+          <h2 class="title">웹디자이너가 활약하는 직장입니다.</h2>
+          <p>
+            개발 팀 내 웹디자이너 비율이 가장 높습니다. 단순히 기능만 개발하는
+            것이 아닌 고객이 사용하기 편하고 아름다움을 느낄 수 있는 것을 만들고
+            있습니다. 당신도 누군가의 세계를 바꿀 수 있는 크리에이티브한
+            웹사이트를 온 세계에 넓혀보시겠습니까?
+          </p>
+        </div>
+        <div class="home-chart">
+          <div class="pie-chart"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper content">
+      <div class="home-text">
+        <h2 class="title">
+          당신의 생활 방식에 맞는 스타일로 일할 수 있습니다.
+        </h2>
+        <p>
+          자사는 도쿄, 오사카 등 각지에 사무실이 있으며 원격 근무도 가능합니다.
+          원격 근무로 활약중인 사원은 전체 약 1/3로, 매년 증가하고 있습니다.
+          재택, 공유 사무실 등 당신이 가장 집중할 수 있는 곳에서 근무하기
+          바랍니다.
+        </p>
+      </div>
+      <div class="home-chart">
+        <div class="bar-chart"></div>
+        <p>원격 근무 사원 수 추이</p>
+      </div>
+    </section>
+
+    <footer>
+      <a href="job.html" class="btn btn-secondary">모집요강 확인</a>
+      <ul class="footer-nav">
+        <li><a href="#">회사개요</a></li>
+        <li><a href="#">서비스 내용</a></li>
+        <li><a href="#">스태프 블로그</a></li>
+        <li><a href="#">문의사항</a></li>
+      </ul>
+    </footer>
+
+    <!-- Chartist -->
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
