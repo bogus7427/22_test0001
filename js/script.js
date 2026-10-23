@@ -6,43 +6,7 @@
 
   /* 모바일 메뉴 */
   const menu = document.querySelector(".main-nav");
-  const menuButton = document.querySelector(".menu-toggle");
-  const mobile = window.matchMedia("(max-width: 820px)");
-
-  const setMenu = (open) => {
-    if (!menu || !menuButton) return;
-
-    menu.classList.toggle("is-open", open);
-    menuButton.setAttribute("aria-expanded", String(open));
-    menuButton.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
-
-    menu.inert = mobile.matches && !open;
-  };
-
-  if (menu && menuButton) {
-    setMenu(false);
-
-    menuButton.addEventListener("click", () => {
-      setMenu(!menu.classList.contains("is-open"));
-    });
-
-    menu.addEventListener("click", (event) => {
-      if (event.target.closest("a")) setMenu(false);
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && menu.classList.contains("is-open")) {
-        setMenu(false);
-        menuButton.focus();
-      }
-    });
-
-    document.addEventListener("click", (event) => {
-      if (!event.target.closest(".site-header")) setMenu(false);
-    });
-
-    mobile.addEventListener("change", () => setMenu(false));
-  }
+  if (menu) menu.inert = false;
 
   /* 메인 슬라이더 */
   const hero = document.querySelector(".hero");
